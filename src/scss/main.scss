@@ -1,8 +1,10 @@
 /*REINICIAR ESTILOS*/
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+*,*:before, *:after {
+  box-sizing: border-box;
 }
 /*PARCIALES*/
 @import 'partials/_grid';
@@ -15,7 +17,7 @@ body {
 html, body, .root, .wrapper {
   height: 100%;
 }
-header, section, footer {
+nav, section, footer {
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -43,12 +45,50 @@ h6 {
   font-size: $note-size;
 }
 /*COMPONENTES*/
+.navbar {
+  @extend .theme-navbar;
+  left: 0;
+  padding-top: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  @extend .theme-brand;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 48px;
+  span {
+    padding: 0 0.25rem;
+    margin-left: 0.25rem;
+  }
+}
+.navbar-menu {
+  @extend .theme-navbar-menu;
+  font-family: $primary-font;
+  font-size: $note-size;
+  list-style: none;
+  text-transform: uppercase;
+  overflow: auto;
+  &__item {
+    @extend .theme-navbar-menu__item;
+    font-weight: 500;
+    float: right;
+    margin: 2px;
+    a{
+       display: block;
+       padding: 1.5rem 1rem;
+       height: 100%;
+       text-align: center;
+       text-decoration: none;
+      }
+  }
+}
 .home {
   @extend .theme-home;
-  background-image: url(../assets/img/bg-home.jpeg);
-  background-repeat: no-repeat;
-  background-position: center -45px;
-  background-size: cover;
   height: 100%;
   padding: 0;
 }
@@ -61,10 +101,9 @@ h6 {
     display: table-cell;
     font-weight: 900;
     padding: 0 10%;
-    text-align: left;
     vertical-align: middle;
     h1 {
-      color: $accent-color;
+      color: $primary-color;
     }
   }
 }
