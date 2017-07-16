@@ -18,8 +18,8 @@ html, body, .root, .wrapper {
   height: 100%;
 }
 nav, section, footer {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 section {
   padding-top: 100px;
@@ -48,7 +48,7 @@ h6 {
 .navbar {
   @extend .theme-navbar;
   left: 0;
-  padding-top: 25px;
+  padding-top: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -100,7 +100,6 @@ h6 {
   &__text {
     display: table-cell;
     font-weight: 900;
-    padding: 0 10%;
     vertical-align: middle;
     h1 {
       color: $primary-color;
@@ -108,5 +107,14 @@ h6 {
   }
 }
 .about-me {
+  @extend .theme-important-section;
   height: 100%;
+}
+.photo-author {
+  img {
+    width: 100%;
+  }
+}
+.author-description {
+  text-align: left;
 }

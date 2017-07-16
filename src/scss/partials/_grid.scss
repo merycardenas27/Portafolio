@@ -2,12 +2,12 @@
 $columns: 12; //Total de columnas
 $column-width: 100% / $columns; //Ancho de columna 8.33%
 $breakpoints: (xs : 0, sm : 768px, md : 992px, lg : 1200px ); //anchos de pantalla
-// $gutter: 0.5rem;
+$gutter: 0.5rem;
 
 //ROW
 .row {
-  // margin-left: -1*$gutter;
-  // margin-right: -1*$gutter;
+  margin-left: -1*$gutter;
+  margin-right: -1*$gutter;
   &:after{
     content: " ";
     visibility: hidden;
@@ -25,8 +25,8 @@ $breakpoints: (xs : 0, sm : 768px, md : 992px, lg : 1200px ); //anchos de pantal
     @for $i from 1 through $columns {
       .col-#{$media}-#{$i} {
         display: inline;
-        // padding-left: $gutter;
-        // padding-right: $gutter;
+        padding-left: $gutter;
+        padding-right: $gutter;
         float: left;
         width: column-width($i);
       }
