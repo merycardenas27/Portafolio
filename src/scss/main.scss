@@ -1,0 +1,17 @@
+/*PARCIALES*/
+@import 'partials/_grid';
+@import 'partials/_colors';
+@import "partials/_fonts";
+/*ESTILOS GENERALES*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body, .root, .wrapper {
+  height: 100%;
+}
+header, section, footer {
+  padding-left: 10%;
+  padding-right: 10%;
+}
