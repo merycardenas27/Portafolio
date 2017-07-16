@@ -76,7 +76,7 @@ h6 {
   &__item {
     @extend .theme-navbar-menu__item;
     font-weight: 500;
-    float: right;
+    float: left;
     margin: 2px;
     a{
        display: block;
@@ -106,4 +106,7 @@ h6 {
       color: $primary-color;
     }
   }
+}
+.about-me {
+  height: 100%;
 }

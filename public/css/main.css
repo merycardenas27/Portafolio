@@ -282,6 +282,10 @@
   background-size: cover;
   color: #fff; }
 
+.theme-important-section {
+  background-color: #fff;
+  color: #333333; }
+
 /*ESTILOS GENERALES*/
 body {
   font-family: "Roboto", sans-serif; }
@@ -343,7 +347,7 @@ h6 {
   overflow: auto; }
   .navbar-menu__item {
     font-weight: 500;
-    float: right;
+    float: left;
     margin: 2px; }
     .navbar-menu__item a {
       display: block;
@@ -368,5 +372,8 @@ h6 {
     vertical-align: middle; }
     .board__text h1 {
       color: #6bccff; }
+
+.about-me {
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
