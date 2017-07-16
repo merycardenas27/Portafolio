@@ -2,4 +2,9 @@
 $primary-color: #fff;
 $primary-dark-color: darken($primary-color, 80%);
 $secondary-color: darken($primary-color, 20%);
-$accent-color: #EA005E;
+$accent-color: #39c6e7;
+
+/*TEMA DE COLOR*/
+.theme-home {
+  color: $primary-color;
+}

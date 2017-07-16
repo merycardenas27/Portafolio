@@ -1,6 +1,12 @@
+/*REINICIAR ESTILOS*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Zilla+Slab:400,500,600,700");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 /*PARCIALES*/
 /*GRID*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Zilla+Slab:400,500,600,700");
 .row {
   overflow: auto; }
 
@@ -196,11 +202,13 @@
   .col-lg-12 {
     float: left;
     width: 100%; } }
+/*TEMA DE COLOR*/
+.theme-home, .home {
+  color: #fff; }
+
 /*ESTILOS GENERALES*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+body {
+  font-family: "Roboto", sans-serif; }
 
 html, body, .root, .wrapper {
   height: 100%; }
@@ -208,5 +216,51 @@ html, body, .root, .wrapper {
 header, section, footer {
   padding-left: 10%;
   padding-right: 10%; }
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.875rem; }
+
+h6 {
+  font-size: 0.75rem; }
+
+/*COMPONENTES*/
+.home {
+  background-image: url(../assets/img/bg3-home.jpeg);
+  background-repeat: no-repeat;
+  background-position: center -45px;
+  background-size: cover;
+  height: 100%;
+  padding: 0; }
+
+.board {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  height: 100%;
+  width: 100%; }
+  .board__text {
+    display: table-cell;
+    font-weight: 900;
+    padding: 0 10%;
+    text-align: left;
+    vertical-align: middle; }
+    .board__text h1 {
+      color: #39c6e7; }
 
 /*# sourceMappingURL=main.css.map */
