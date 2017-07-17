@@ -1,0 +1,57 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 17/07/2017 07:11
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-navegador:before { content: "\f100"; }
+.flaticon-codificacion:before { content: "\f101"; }
+.flaticon-tienda-online:before { content: "\f102"; }
+.flaticon-motor-de-busqueda:before { content: "\f103"; }
+.flaticon-mapa-del-sitio-1:before { content: "\f104"; }
+.flaticon-etiquetas:before { content: "\f105"; }
+.flaticon-enlace:before { content: "\f106"; }
+.flaticon-idea:before { content: "\f107"; }
+.flaticon-navegador-1:before { content: "\f108"; }
+.flaticon-busqueda:before { content: "\f109"; }
+.flaticon-dispositivos:before { content: "\f10a"; }
+.flaticon-analitica:before { content: "\f10b"; }
+.flaticon-estadisticas:before { content: "\f10c"; }
+.flaticon-mapa:before { content: "\f10d"; }
+.flaticon-registro-de-dominios:before { content: "\f10e"; }
+.flaticon-mapa-del-sitio:before { content: "\f10f"; }
+.flaticon-atractivo:before { content: "\f110"; }
+.flaticon-analisis-1:before { content: "\f111"; }
+.flaticon-lluvia-de-ideas:before { content: "\f112"; }
+.flaticon-herramienta-de-diseno:before { content: "\f113"; }
+.flaticon-analisis:before { content: "\f114"; }
+.flaticon-sensible:before { content: "\f115"; }
+.flaticon-instrumentos:before { content: "\f116"; }
+.flaticon-html:before { content: "\f117"; }
+.flaticon-contenido:before { content: "\f118"; }
+.flaticon-tecnologia:before { content: "\f119"; }

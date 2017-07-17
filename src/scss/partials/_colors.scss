@@ -4,7 +4,8 @@ $secondary-color: #fff;
 $secondary-dark1-color: #E8E8E8;
 $secondary-dark2-color: darken($secondary-color, 80%);
 // $accent-color: #ff964e;
-$accent-color: #f7b617;
+$accent-color: #f9a91a;
+
 /*TEMA DE COLOR*/
 .theme-navbar {
   background-color: transparent;
@@ -37,5 +38,7 @@ $accent-color: #f7b617;
 }
 .theme-important-section {
   background-color: $secondary-color;
-  color: $secondary-dark2-color;
+}
+.theme-section {
+  background-color: $secondary-dark1-color;
 }

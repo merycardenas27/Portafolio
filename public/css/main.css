@@ -382,8 +382,10 @@
   color: #fff; }
 
 .theme-important-section, .about-me {
-  background-color: #fff;
-  color: #333333; }
+  background-color: #fff; }
+
+.theme-section, .skills {
+  background-color: #E8E8E8; }
 
 /*ESTILOS GENERALES*/
 body {
@@ -402,6 +404,9 @@ section {
   padding-bottom: 100px;
   text-align: center; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
+
 h1 {
   font-size: 4rem; }
 
@@ -409,7 +414,8 @@ h2 {
   font-size: 3rem; }
 
 h3 {
-  font-size: 2rem; }
+  font-size: 2rem;
+  margin-bottom: 50px; }
 
 h4 {
   font-size: 1rem; }
@@ -420,13 +426,9 @@ h5 {
 h6 {
   font-size: 0.75rem; }
 
-p {
-  margin-bottom: 1em; }
-
 /*COMPONENTES*/
 .navbar {
   left: 0;
-  padding-top: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -502,11 +504,28 @@ p {
       line-height: 1.75em;
       text-align: justify; }
   .biography-author__more span {
-    color: #f7b617;
+    color: #f9a91a;
     font-weight: 500; }
 
 .badges__item {
   margin: 0.75rem 0.75rem 0.75rem 0;
   width: 17.5%; }
+
+.skills {
+  height: 100%; }
+
+.skill {
+  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem; }
+  .skill__icon {
+    margin-bottom: 1rem; }
+
+[class^='flaticon-'] {
+  color: #6bccff; }
+
+[class^='flaticon-']::before {
+  font-size: 6rem;
+  margin-left: 0; }
 
 /*# sourceMappingURL=main.css.map */
