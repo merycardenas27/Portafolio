@@ -177,3 +177,7 @@ h6 {
   font-size: 6rem;
   margin-left: 0;
 }
+.portfolio {
+  @extend .theme-important-section;
+  height: 100%;
+}

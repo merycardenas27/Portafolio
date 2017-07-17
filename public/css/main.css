@@ -381,7 +381,7 @@
   background-size: cover;
   color: #fff; }
 
-.theme-important-section, .about-me {
+.theme-important-section, .about-me, .portfolio {
   background-color: #fff; }
 
 .theme-section, .skills {
@@ -527,5 +527,8 @@ h6 {
 [class^='flaticon-']::before {
   font-size: 6rem;
   margin-left: 0; }
+
+.portfolio {
+  height: 100%; }
 
 /*# sourceMappingURL=main.css.map */
