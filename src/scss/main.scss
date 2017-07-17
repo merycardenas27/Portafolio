@@ -61,10 +61,13 @@ h6 {
   align-items: center;
 }
 .brand {
-  @extend .theme-brand;
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 48px;
+  a {
+    @extend .theme-brand;
+    text-decoration: none;
+  }
   span {
     padding: 0 0.25rem;
     margin-left: 0.25rem;
@@ -160,7 +163,7 @@ h6 {
 }
 .skills {
   @extend .theme-section;
-  height: 100%;
+  // height: 100%;
 }
 .skill {
   background-color: $secondary-color;
@@ -179,5 +182,13 @@ h6 {
 }
 .portfolio {
   @extend .theme-important-section;
-  height: 100%;
+  [class^='col-'] {
+  padding: 0;
+  }
+}
+.project {
+  height: 300px;
+  img {
+    width: 100%;
+  }
 }
