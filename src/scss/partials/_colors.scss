@@ -1,10 +1,10 @@
 //PALETA DE COLOR
 $primary-color: #6bccff;
 $secondary-color: #fff;
-$secondary-dark1-color: darken($secondary-color, 20%);
+$secondary-dark1-color: #E8E8E8;
 $secondary-dark2-color: darken($secondary-color, 80%);
-$accent-color: #ff964e;
-
+// $accent-color: #ff964e;
+$accent-color: #f7b617;
 /*TEMA DE COLOR*/
 .theme-navbar {
   background-color: transparent;
@@ -36,6 +36,6 @@ $accent-color: #ff964e;
   color: $secondary-color;
 }
 .theme-important-section {
-  background-color: $secondary-dark1-color;
+  background-color: $secondary-color;
   color: $secondary-dark2-color;
 }

@@ -12,6 +12,7 @@
 @import "partials/_fonts";
 /*ESTILOS GENERALES*/
 body {
+  color: $secondary-dark2-color;
   font-family: $primary-font;
 }
 html, body, .root, .wrapper {
@@ -43,6 +44,9 @@ h5 {
 }
 h6 {
   font-size: $note-size;
+}
+p {
+  margin-bottom: 1em;
 }
 /*COMPONENTES*/
 .navbar {
@@ -115,6 +119,42 @@ h6 {
     width: 100%;
   }
 }
-.author-description {
+.biography-author {
+  font-weight: 300;
   text-align: left;
+  &__name{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    span {
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+  &__profession{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    span{
+      color: $primary-color;
+      font-weight: bold;
+    }
+  }
+  &__description {
+    margin-bottom: 2rem;
+    p {
+      line-height: 1.75em;
+      text-align: justify;
+    }
+  }
+  &__more {
+    span {
+      color: $accent-color;
+      font-weight: 500;
+    }
+  }
+}
+.badges {
+  &__item {
+    margin: 0.75rem 0.75rem 0.75rem 0;
+    width: 17.5%;
+  }
 }
