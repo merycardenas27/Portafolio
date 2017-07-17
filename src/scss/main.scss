@@ -23,7 +23,7 @@ nav, section, footer {
   padding-right: 7.5%;
 }
 section {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 100px;
   text-align: center;
 }
@@ -52,38 +52,45 @@ h6 {
 /*COMPONENTES*/
 .navbar {
   @extend .theme-navbar;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   left: 0;
+  padding-top: 50px;
   position: fixed;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+.navbar-small {
+  padding-top: 0;
+  @extend .theme-navbar-small;
+  -ms-transition:     all 0.3s ease-out;
+  -moz-transition:    all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition:      all 0.3s ease-out;
+  transition:         all 0.3s ease-out;
 }
 .brand {
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 48px;
   a {
-    @extend .theme-brand;
     text-decoration: none;
   }
   span {
-    padding: 0 0.25rem;
     margin-left: 0.25rem;
+    padding: 0 0.25rem;
   }
 }
 .navbar-menu {
-  @extend .theme-navbar-menu;
   font-family: $primary-font;
   font-size: $note-size;
   list-style: none;
   text-transform: uppercase;
   overflow: auto;
   &__item {
-    @extend .theme-navbar-menu__item;
-    font-weight: 500;
     float: left;
+    font-weight: 500;
     margin: 2px;
     a{
        display: block;
@@ -163,7 +170,6 @@ h6 {
 }
 .skills {
   @extend .theme-section;
-  // height: 100%;
 }
 .skill {
   background-color: $secondary-color;
@@ -174,7 +180,8 @@ h6 {
   }
 }
 [class^='flaticon-'] {
-  color: $primary-color;
+  color: $accent-color;
+  // color: $primary-color;
 }
 [class^='flaticon-']::before {
   font-size: 6rem;

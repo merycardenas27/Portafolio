@@ -359,20 +359,38 @@
 .theme-navbar, .navbar {
   background-color: transparent;
   color: #fff; }
+  .theme-navbar .brand, .navbar .brand {
+    background-color: inherit; }
+    .theme-navbar .brand a, .navbar .brand a {
+      color: #fff; }
+    .theme-navbar .brand span, .navbar .brand span {
+      background-color: #6bccff; }
+  .theme-navbar .navbar-menu, .navbar .navbar-menu {
+    background-color: inherit; }
+    .theme-navbar .navbar-menu .navbar-menu__item a, .navbar .navbar-menu .navbar-menu__item a {
+      color: #fff; }
+    .theme-navbar .navbar-menu .navbar-menu__item a:hover, .navbar .navbar-menu .navbar-menu__item a:hover {
+      background-color: #6bccff; }
 
-.theme-brand, .brand a {
-  background-color: inherit;
-  color: #fff; }
-  .theme-brand span, .brand a span {
-    border: 1px solid #6bccff; }
-
-.theme-navbar-menu, .navbar-menu {
-  background-color: inherit; }
-
-.theme-navbar-menu__item a, .navbar-menu__item a {
-  color: #fff; }
-.theme-navbar-menu__item a:hover, .navbar-menu__item a:hover {
-  background-color: #6bccff; }
+.theme-navbar-small, .navbar-small {
+  background-color: #fff;
+  color: #333333;
+  -webkit-box-shadow: 0 10px 5px -5px #666666;
+  -moz-box-shadow: 0 10px 5px -5px #666666;
+  box-shadow: 0 10px 5px -5px #666666; }
+  .theme-navbar-small .brand, .navbar-small .brand {
+    background-color: inherit; }
+    .theme-navbar-small .brand a, .navbar-small .brand a {
+      color: #6bccff; }
+    .theme-navbar-small .brand span, .navbar-small .brand span {
+      color: #fff;
+      background-color: #6bccff; }
+  .theme-navbar-small .navbar-menu, .navbar-small .navbar-menu {
+    background-color: inherit; }
+    .theme-navbar-small .navbar-menu .navbar-menu__item a, .navbar-small .navbar-menu .navbar-menu__item a {
+      color: #333333; }
+    .theme-navbar-small .navbar-menu .navbar-menu__item a:hover, .navbar-small .navbar-menu .navbar-menu__item a:hover {
+      background-color: #6bccff; }
 
 .theme-home, .home {
   background-image: url(../assets/img/bg-home.jpeg);
@@ -400,7 +418,7 @@ nav, section, footer {
   padding-right: 7.5%; }
 
 section {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 100px;
   text-align: center; }
 
@@ -428,13 +446,22 @@ h6 {
 
 /*COMPONENTES*/
 .navbar {
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  left: 0;
+  padding-top: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.navbar-small {
+  padding-top: 0;
+  -ms-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
 .brand {
   font-family: "Zilla Slab", serif;
@@ -443,8 +470,8 @@ h6 {
   .brand a {
     text-decoration: none; }
   .brand span {
-    padding: 0 0.25rem;
-    margin-left: 0.25rem; }
+    margin-left: 0.25rem;
+    padding: 0 0.25rem; }
 
 .navbar-menu {
   font-family: "Roboto", sans-serif;
@@ -453,8 +480,8 @@ h6 {
   text-transform: uppercase;
   overflow: auto; }
   .navbar-menu__item {
-    font-weight: 500;
     float: left;
+    font-weight: 500;
     margin: 2px; }
     .navbar-menu__item a {
       display: block;
@@ -521,7 +548,7 @@ h6 {
     margin-bottom: 1rem; }
 
 [class^='flaticon-'] {
-  color: #6bccff; }
+  color: #f9a91a; }
 
 [class^='flaticon-']::before {
   font-size: 6rem;
