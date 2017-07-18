@@ -1,7 +1,7 @@
 //PALETA DE COLOR
 $primary-color: #6bccff;
 $secondary-color: #fff;
-$secondary-dark1-color: #E8E8E8;
+$secondary-dark1-color: #f5f5f5;
 $secondary-dark2-color: darken($secondary-color, 80%);
 $accent-color: #f9a91a;
 
@@ -33,9 +33,9 @@ $accent-color: #f9a91a;
 .theme-navbar-small {
   background-color: $secondary-color;
   color: $secondary-dark2-color;
-  -webkit-box-shadow: 0 10px 5px -5px darken($secondary-color, 60%);
-  -moz-box-shadow: 0 10px 5px -5px darken($secondary-color, 60%);
-  box-shadow: 0 10px 5px -5px darken($secondary-color, 60%);
+  -webkit-box-shadow: 0 0 10px darken($secondary-color, 50%);
+  -moz-box-shadow: 0 0 10px darken($secondary-color, 50%);
+  box-shadow: 0 0 10px darken($secondary-color, 50%);
   .brand {
     background-color: inherit;
     a{

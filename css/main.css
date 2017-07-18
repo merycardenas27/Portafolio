@@ -375,9 +375,9 @@
 .theme-navbar-small, .navbar-small {
   background-color: #fff;
   color: #333333;
-  -webkit-box-shadow: 0 10px 5px -5px #666666;
-  -moz-box-shadow: 0 10px 5px -5px #666666;
-  box-shadow: 0 10px 5px -5px #666666; }
+  -webkit-box-shadow: 0 0 10px gray;
+  -moz-box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray; }
   .theme-navbar-small .brand, .navbar-small .brand {
     background-color: inherit; }
     .theme-navbar-small .brand a, .navbar-small .brand a {
@@ -403,7 +403,92 @@
   background-color: #fff; }
 
 .theme-section, .skills {
-  background-color: #E8E8E8; }
+  background-color: #f5f5f5; }
+
+.dg-container {
+  height: 450px;
+  position: relative; }
+
+.dg-wrapper {
+  width: 481px;
+  height: 316px;
+  margin: 0 auto 1rem;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px; }
+
+.dg-wrapper a {
+  width: 482px;
+  height: 316px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent url(../assets/img/browser.svg) no-repeat top left;
+  box-shadow: 0px 10px 20px rgba(140, 140, 140, 0.5); }
+
+.dg-wrapper a.dg-transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+.dg-wrapper a img {
+  display: block;
+  padding: 56px 0px 0px 1px; }
+
+.btn {
+  border: 3px solid;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: inherit;
+  margin: 0 0.5rem 1rem;
+  padding: 1rem 0;
+  width: 150px; }
+  .btn :hover {
+    -webkit-transition: 200ms ease-in;
+    -moz-transition: 200ms ease-in;
+    -o-transition: 200ms ease-in;
+    transition: 200ms ease-in; }
+
+.btn-important {
+  background-color: #f9a91a;
+  border-color: #f9a91a;
+  color: #fff; }
+  .btn-important :hover {
+    background-color: #fff;
+    border-color: #f9a91a;
+    color: #333333; }
+
+.btn-default {
+  background-color: #333333;
+  border-color: #333333;
+  color: #fff; }
+  .btn-default :hover {
+    background-color: #fff;
+    border-color: #333333;
+    color: #333333; }
+
+.btn-round {
+  background-color: #333333;
+  border-radius: 50%;
+  color: #fff;
+  opacity: 0.5;
+  padding: 0.5rem 1rem;
+  width: auto; }
+  .btn-round :hover {
+    background-color: #333333;
+    opacity: 0.25; }
 
 /*ESTILOS GENERALES*/
 body {
@@ -418,8 +503,8 @@ nav, section, footer {
   padding-right: 7.5%; }
 
 section {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 50px;
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -433,6 +518,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
+  font-weight: 900;
   margin-bottom: 50px; }
 
 h4 {
@@ -444,7 +530,17 @@ h5 {
 h6 {
   font-size: 0.75rem; }
 
-/*COMPONENTES*/
+p {
+  margin-bottom: 1rem; }
+
+[class^='flaticon-'] {
+  color: #f9a91a; }
+
+[class^='flaticon-']::before {
+  font-size: 6rem;
+  margin-left: 0; }
+
+/*BLOQUES*/
 .navbar {
   align-items: center;
   display: flex;
@@ -482,10 +578,10 @@ h6 {
   .navbar-menu__item {
     float: left;
     font-weight: 500;
-    margin: 2px; }
+    margin: 0 2px; }
     .navbar-menu__item a {
       display: block;
-      padding: 1.5rem 1rem;
+      padding: 1rem 1rem;
       height: 100%;
       text-align: center;
       text-decoration: none; }
@@ -527,39 +623,23 @@ h6 {
     .biography-author__profession span {
       color: #6bccff;
       font-weight: bold; }
-  .biography-author__description {
-    margin-bottom: 2rem; }
-    .biography-author__description p {
-      line-height: 1.75em;
-      text-align: justify; }
+  .biography-author__description p {
+    line-height: 1.75em;
+    text-align: justify; }
   .biography-author__more span {
     color: #f9a91a;
     font-weight: 500; }
 
 .badges__item {
-  margin: 0.75rem 0.75rem 0.75rem 0;
+  margin-right: 1rem;
   width: 17.5%; }
 
 .skill {
   background-color: #fff;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
   padding: 1rem; }
   .skill__icon {
     margin-bottom: 1rem; }
-
-[class^='flaticon-'] {
-  color: #f9a91a; }
-
-[class^='flaticon-']::before {
-  font-size: 6rem;
-  margin-left: 0; }
-
-.portfolio [class^='col-'] {
-  padding: 0; }
-
-.project {
-  height: 300px; }
-  .project img {
-    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
