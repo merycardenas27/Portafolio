@@ -1,4 +1,9 @@
-@font-face {
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 18/07/2017 17:10
+    */
+
+    @font-face {
   font-family: "Flaticon";
   src: url("./Flaticon.eot");
   src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
@@ -17,7 +22,7 @@
 }
 
     .fi:before{
-  display: inline-block;
+        display: inline-block;
   font-family: "Flaticon";
   font-style: normal;
   font-weight: normal;
@@ -31,56 +36,36 @@
   font-smoothing: antialiased;
     }
 
-.flaticon-navegador:before { content: "\f100"; }
-.flaticon-codificacion:before { content: "\f101"; }
-.flaticon-tienda-online:before { content: "\f102"; }
-.flaticon-motor-de-busqueda:before { content: "\f103"; }
-.flaticon-mapa-del-sitio-1:before { content: "\f104"; }
-.flaticon-etiquetas:before { content: "\f105"; }
-.flaticon-enlace:before { content: "\f106"; }
-.flaticon-idea:before { content: "\f107"; }
-.flaticon-navegador-1:before { content: "\f108"; }
-.flaticon-busqueda:before { content: "\f109"; }
-.flaticon-dispositivos:before { content: "\f10a"; }
-.flaticon-analitica:before { content: "\f10b"; }
-.flaticon-estadisticas:before { content: "\f10c"; }
-.flaticon-mapa:before { content: "\f10d"; }
-.flaticon-registro-de-dominios:before { content: "\f10e"; }
-.flaticon-mapa-del-sitio:before { content: "\f10f"; }
-.flaticon-atractivo:before { content: "\f110"; }
-.flaticon-analisis-1:before { content: "\f111"; }
-.flaticon-lluvia-de-ideas:before { content: "\f112"; }
-.flaticon-herramienta-de-diseno:before { content: "\f113"; }
-.flaticon-analisis:before { content: "\f114"; }
-.flaticon-sensible:before { content: "\f115"; }
-.flaticon-instrumentos:before { content: "\f116"; }
-.flaticon-html:before { content: "\f117"; }
-.flaticon-contenido:before { content: "\f118"; }
-.flaticon-tecnologia:before { content: "\f119"; }
-
-    $font-Flaticon-navegador: "\f100";
-    $font-Flaticon-codificacion: "\f101";
-    $font-Flaticon-tienda-online: "\f102";
-    $font-Flaticon-motor-de-busqueda: "\f103";
-    $font-Flaticon-mapa-del-sitio-1: "\f104";
-    $font-Flaticon-etiquetas: "\f105";
-    $font-Flaticon-enlace: "\f106";
-    $font-Flaticon-idea: "\f107";
-    $font-Flaticon-navegador-1: "\f108";
-    $font-Flaticon-busqueda: "\f109";
-    $font-Flaticon-dispositivos: "\f10a";
-    $font-Flaticon-analitica: "\f10b";
-    $font-Flaticon-estadisticas: "\f10c";
-    $font-Flaticon-mapa: "\f10d";
-    $font-Flaticon-registro-de-dominios: "\f10e";
-    $font-Flaticon-mapa-del-sitio: "\f10f";
-    $font-Flaticon-atractivo: "\f110";
-    $font-Flaticon-analisis-1: "\f111";
-    $font-Flaticon-lluvia-de-ideas: "\f112";
-    $font-Flaticon-herramienta-de-diseno: "\f113";
-    $font-Flaticon-analisis: "\f114";
-    $font-Flaticon-sensible: "\f115";
-    $font-Flaticon-instrumentos: "\f116";
-    $font-Flaticon-html: "\f117";
-    $font-Flaticon-contenido: "\f118";
-    $font-Flaticon-tecnologia: "\f119";
+    .flaticon-computer-1:before { content: "\f100"; }
+.flaticon-coding:before { content: "\f101"; }
+.flaticon-database:before { content: "\f102"; }
+.flaticon-technology:before { content: "\f103"; }
+.flaticon-internet:before { content: "\f104"; }
+.flaticon-html:before { content: "\f105"; }
+.flaticon-css:before { content: "\f106"; }
+.flaticon-monitor:before { content: "\f107"; }
+.flaticon-tools:before { content: "\f108"; }
+.flaticon-design-tool:before { content: "\f109"; }
+.flaticon-brainstorming:before { content: "\f10a"; }
+.flaticon-attractive:before { content: "\f10b"; }
+.flaticon-computer:before { content: "\f10c"; }
+.flaticon-monitor-1:before { content: "\f10d"; }
+.flaticon-api:before { content: "\f10e"; }
+.flaticon-content:before { content: "\f10f"; }
+    
+    $font-Flaticon-computer-1: "\f100";
+    $font-Flaticon-coding: "\f101";
+    $font-Flaticon-database: "\f102";
+    $font-Flaticon-technology: "\f103";
+    $font-Flaticon-internet: "\f104";
+    $font-Flaticon-html: "\f105";
+    $font-Flaticon-css: "\f106";
+    $font-Flaticon-monitor: "\f107";
+    $font-Flaticon-tools: "\f108";
+    $font-Flaticon-design-tool: "\f109";
+    $font-Flaticon-brainstorming: "\f10a";
+    $font-Flaticon-attractive: "\f10b";
+    $font-Flaticon-computer: "\f10c";
+    $font-Flaticon-monitor-1: "\f10d";
+    $font-Flaticon-api: "\f10e";
+    $font-Flaticon-content: "\f10f";
