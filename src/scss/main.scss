@@ -120,6 +120,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 .navbar-small {
   padding-top: 0;
@@ -241,4 +242,13 @@ p {
 }
 .portfolio {
   @extend .theme-important-section;
+}
+.contact-me {
+  @extend .theme-section;
+}
+.card {
+  @extend .theme-important-section;
+  box-shadow: 1px 1px 9px rgba(0,0,0,0.1);
+  height: 300px;
+  padding: 1rem;
 }
