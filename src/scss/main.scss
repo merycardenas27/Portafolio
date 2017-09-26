@@ -10,7 +10,6 @@
 @import 'partials/_grid';
 @import 'partials/_colors';
 @import "partials/_fonts";
-@import "partials/_gallery";
 .btn {
   border: 3px solid;
   display: inline-block;
@@ -183,7 +182,6 @@ p {
 }
 .about-me {
   @extend .theme-important-section;
-  height: 100%;
 }
 .photo-author {
   img {
@@ -243,6 +241,11 @@ p {
 .portfolio {
   @extend .theme-important-section;
 }
+.project {
+  img {
+    width: 100%;
+  }
+}
 .contact-me {
   @extend .theme-section;
 }
@@ -251,4 +254,20 @@ p {
   box-shadow: 1px 1px 9px rgba(0,0,0,0.1);
   height: 300px;
   padding: 1rem;
+}
+
+@media (min-width: 0) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+  .about-me {
+    height: 100%;
+  }
 }
