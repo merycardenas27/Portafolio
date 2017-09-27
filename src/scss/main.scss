@@ -527,12 +527,21 @@ p {
 }
 
 @media (min-width: 0) {
+  [class^='flaticon-']::before {
+    font-size: 5rem;
+  }
   section {
     padding-top: 2rem;
     padding-bottom:2rem;
   }
   h3 {
     margin-bottom: 2rem;
+  }
+  .skill {
+    height: 190px;
+    &__description {
+      display: none;
+    }
   }
   .portfolio {
     & .row:nth-child(2) {
@@ -573,12 +582,21 @@ p {
 
 }
 @media (min-width: 992px) {
+  [class^='flaticon-']::before {
+    font-size: 6rem;
+  }
   section {
     padding-top: 110px;
     padding-bottom: 50px;
   }
   h3 {
     margin-bottom: 50px;
+  }
+  .skill {
+    height: auto;
+    &__description {
+      display: block;
+    }
   }
   .portfolio {
     & .row:nth-child(3) {
