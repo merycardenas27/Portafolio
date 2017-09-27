@@ -635,13 +635,11 @@ p {
 
 .project-caption h3 {
   color: #f9a91a; }
+.project-caption p {
+  display: none; }
 .project-caption .user-action {
-  bottom: 1rem;
   position: absolute;
-  text-align: center;
-  width: calc(100% - 4rem); }
-  .project-caption .user-action .btn {
-    width: 100px; }
+  text-align: center; }
 
 .project-information h3 {
   color: #6bccff; }
@@ -881,6 +879,11 @@ p {
 
   .project-caption {
     padding: 1rem; }
+    .project-caption .user-action {
+      bottom: 0.25rem;
+      width: calc(100% - 2rem); }
+      .project-caption .user-action .btn {
+        width: 75px; }
 
   .project-information {
     padding: 0; }
@@ -893,6 +896,13 @@ p {
 
   .project-caption {
     padding: 2rem; }
+    .project-caption p {
+      display: block; }
+    .project-caption .user-action {
+      bottom: 1rem;
+      width: calc(100% - 4rem); }
+      .project-caption .user-action .btn {
+        width: 100px; }
 
   .project-information {
     padding: 2rem; }
@@ -905,7 +915,14 @@ p {
       .project-information ul li {
         display: inline-block;
         background-color: lightgray;
-        padding: 0.5rem; } }
+        padding: 0.5rem; }
+
+  .portfolio .row:nth-child(3) .col-md-6:nth-child(1) {
+    position: relative;
+    right: -50%; }
+  .portfolio .row:nth-child(3) .col-md-6:nth-child(2) {
+    position: relative;
+    left: -50%; } }
 @media (min-width: 1200px) {
   .about-me {
     height: 100%; }

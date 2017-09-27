@@ -280,13 +280,16 @@ p {
   h3 {
     color: $accent-color;
   }
+  p {
+    display: none;
+  }
   .user-action {
-    bottom: 1rem;
+    // bottom: 1rem;
     position: absolute;
     text-align: center;
-    width: calc(100% - 4rem);
+    // width: calc(100% - 4rem);
     .btn {
-      width: 100px;
+      // width: 100px;
     }
   }
 }
@@ -535,6 +538,13 @@ p {
   }
   .project-caption {
     padding: 1rem;
+    .user-action {
+      bottom: 0.25rem;
+      width: calc(100% - 2rem);
+      .btn {
+        width: 75px;
+      }
+    }
   }
   .project-information {
     padding: 0;
@@ -554,6 +564,16 @@ p {
   }
   .project-caption {
     padding: 2rem;
+    p {
+      display: block;
+    }
+    .user-action {
+      bottom: 1rem;
+      width: calc(100% - 4rem);
+      .btn {
+        width: 100px;
+      }
+    }
   }
   .project-information {
     padding: 2rem;
@@ -568,6 +588,18 @@ p {
         display: inline-block;
         background-color: lightgray;
         padding: 0.5rem;
+      }
+    }
+  }
+  .portfolio {
+    & .row:nth-child(3) {
+      & .col-md-6:nth-child(1) {
+        position: relative;
+        right: -50%;
+      }
+      & .col-md-6:nth-child(2) {
+        position: relative;
+        left: -50%;
       }
     }
   }
