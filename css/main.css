@@ -395,7 +395,6 @@
 .theme-home, .home {
   background-image: url(../assets/img/bg-home.jpeg);
   background-repeat: no-repeat;
-  background-position: center -45px;
   background-size: cover;
   color: #fff; }
 
@@ -468,14 +467,10 @@ section {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem; }
 
-h1 {
-  font-size: 4rem; }
-
 h2 {
   font-size: 3rem; }
 
 h3 {
-  font-size: 2rem;
   font-weight: 900; }
 
 h4 {
@@ -872,11 +867,26 @@ p {
     padding-top: 2rem;
     padding-bottom: 2rem; }
 
+  h1 {
+    font-size: 3rem; }
+
   h3 {
+    font-size: 1.5rem;
     margin-bottom: 2rem; }
 
+  .navbar {
+    display: none; }
+
+  .home {
+    background-position: -150px top; }
+
+  .biography-author__more {
+    text-align: center; }
+
+  .sk
   .skill {
     height: 190px; }
+    .sk
     .skill__description {
       display: none; }
 
@@ -906,15 +916,28 @@ p {
     .project-information h4, .project-information ul {
       display: none; } }
 @media (min-width: 992px) {
-  [class^='flaticon-']::before {
-    font-size: 6rem; }
+  h1 {
+    font-size: 4rem; }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 50px; }
 
   section {
     padding-top: 110px;
     padding-bottom: 50px; }
 
-  h3 {
-    margin-bottom: 50px; }
+  .navbar {
+    display: block; }
+
+  .home {
+    background-position: center -45px; }
+
+  [class^='flaticon-']::before {
+    font-size: 6rem; }
+
+  .biography-author__more {
+    text-align: left; }
 
   .skill {
     height: auto; }
