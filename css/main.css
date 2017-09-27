@@ -463,8 +463,6 @@ nav, section, footer {
   padding-right: 7.5%; }
 
 section {
-  padding-top: 110px;
-  padding-bottom: 50px;
   text-align: center; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -478,8 +476,7 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 50px; }
+  font-weight: 900; }
 
 h4 {
   font-size: 1rem; }
@@ -627,6 +624,7 @@ p {
   .project-caption h3,
   .project-information h3 {
     margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: center;
     font-weight: normal; }
   .project-caption p,
@@ -867,6 +865,16 @@ p {
   padding: 1rem; }
 
 @media (min-width: 0) {
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+
+  h3 {
+    margin-bottom: 2rem; }
+
+  .portfolio .row:nth-child(2) .project-title {
+    margin-top: 0; }
+
   .project {
     max-width: 400px;
     max-height: 300px;
@@ -890,6 +898,20 @@ p {
     .project-information h4, .project-information ul {
       display: none; } }
 @media (min-width: 992px) {
+  section {
+    padding-top: 110px;
+    padding-bottom: 50px; }
+
+  h3 {
+    margin-bottom: 50px; }
+
+  .portfolio .row:nth-child(3) .col-md-6:nth-child(1) {
+    position: relative;
+    right: -50%; }
+  .portfolio .row:nth-child(3) .col-md-6:nth-child(2) {
+    position: relative;
+    left: -50%; }
+
   .project {
     max-width: 100%;
     max-height: 100%; }
@@ -915,14 +937,7 @@ p {
       .project-information ul li {
         display: inline-block;
         background-color: lightgray;
-        padding: 0.5rem; }
-
-  .portfolio .row:nth-child(3) .col-md-6:nth-child(1) {
-    position: relative;
-    right: -50%; }
-  .portfolio .row:nth-child(3) .col-md-6:nth-child(2) {
-    position: relative;
-    left: -50%; } }
+        padding: 0.5rem; } }
 @media (min-width: 1200px) {
   .about-me {
     height: 100%; }
