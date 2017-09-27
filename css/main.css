@@ -883,10 +883,8 @@ p {
   .biography-author__more {
     text-align: center; }
 
-  .sk
   .skill {
     height: 190px; }
-    .sk
     .skill__description {
       display: none; }
 
@@ -928,7 +926,7 @@ p {
     padding-bottom: 50px; }
 
   .navbar {
-    display: block; }
+    display: flex; }
 
   .home {
     background-position: center -45px; }
