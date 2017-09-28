@@ -20,31 +20,29 @@
   margin: 0 0.5rem 1rem;
   padding: 1rem 0;
   width: 150px;
-  :hover {
-    -webkit-transition: 200ms ease-in;
-    -moz-transition: 200ms ease-in;
-    -o-transition: 200ms ease-in;
-    transition: 200ms ease-in;
+  &:hover {
+    -webkit-transition: 0.25s ease-in;
+    -moz-transition: 0.25s ease-in;
+    -o-transition: 0.25s ease-in;
+    transition: 0.25s ease-in;
   }
 }
 .btn-important {
   background-color: $accent-color;
   border-color: $accent-color;
   color: $secondary-color;
-  :hover {
-    background-color: $secondary-color;
-    border-color: $accent-color;
-    color: $secondary-dark2-color;
+  &:hover {
+    background-color: #E39A18;
+    border-color: #E39A18;
   }
 }
 .btn-default {
   background-color: $secondary-dark2-color;
   border-color: $secondary-dark2-color;
   color: $secondary-color;
-  :hover {
-    background-color: $secondary-color;
-    border-color: $secondary-dark2-color;
-    color: $secondary-dark2-color;
+  &:hover {
+    background-color: #2F2F2F;
+    border-color: #2F2F2F;
   }
 }
 .btn-round {
@@ -553,6 +551,16 @@ p {
     text-decoration: none;
   }
 }
+footer {
+  @extend .theme-footer;
+  letter-spacing: 0.115rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  a {
+    text-decoration: none;
+  }
+}
 @media (min-width: 0) {
   [class^='flaticon-']::before {
     font-size: 5rem;
@@ -643,8 +651,10 @@ p {
       font-size: 2rem;
     }
   }
+  footer {
+    font-size: 0.75rem;
+  }
 }
-
 @media (min-width: 768px) {
 
 }
@@ -749,6 +759,9 @@ p {
     [class^='flaticon-']::before {
       font-size: 3rem;
     }
+  }
+  footer {
+    font-size: inherit;
   }
 }
 @media (min-width: 1200px) {

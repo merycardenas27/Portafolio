@@ -70,3 +70,10 @@ $accent-color: #f9a91a;
 .theme-section {
   background-color: $secondary-dark1-color;
 }
+.theme-footer {
+  background-color: $secondary-dark2-color;
+  color: $secondary-color;
+  .name-developer, span {
+    color: $primary-color;
+  }
+}

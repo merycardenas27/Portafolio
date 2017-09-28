@@ -404,6 +404,12 @@
 .theme-section, .skills, .contact-me {
   background-color: #f5f5f5; }
 
+.theme-footer, footer {
+  background-color: #333333;
+  color: #fff; }
+  .theme-footer .name-developer, footer .name-developer, .theme-footer span, footer span {
+    color: #6bccff; }
+
 .btn {
   border: 3px solid;
   display: inline-block;
@@ -414,29 +420,27 @@
   margin: 0 0.5rem 1rem;
   padding: 1rem 0;
   width: 150px; }
-  .btn :hover {
-    -webkit-transition: 200ms ease-in;
-    -moz-transition: 200ms ease-in;
-    -o-transition: 200ms ease-in;
-    transition: 200ms ease-in; }
+  .btn:hover {
+    -webkit-transition: 0.25s ease-in;
+    -moz-transition: 0.25s ease-in;
+    -o-transition: 0.25s ease-in;
+    transition: 0.25s ease-in; }
 
 .btn-important {
   background-color: #f9a91a;
   border-color: #f9a91a;
   color: #fff; }
-  .btn-important :hover {
-    background-color: #fff;
-    border-color: #f9a91a;
-    color: #333333; }
+  .btn-important:hover {
+    background-color: #E39A18;
+    border-color: #E39A18; }
 
 .btn-default {
   background-color: #333333;
   border-color: #333333;
   color: #fff; }
-  .btn-default :hover {
-    background-color: #fff;
-    border-color: #333333;
-    color: #333333; }
+  .btn-default:hover {
+    background-color: #2F2F2F;
+    border-color: #2F2F2F; }
 
 .btn-round {
   background-color: #333333;
@@ -887,6 +891,14 @@ p {
   margin-right: 1rem;
   text-decoration: none; }
 
+footer {
+  letter-spacing: 0.115rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-align: center; }
+  footer a {
+    text-decoration: none; }
+
 @media (min-width: 0) {
   [class^='flaticon-']::before {
     font-size: 5rem; }
@@ -963,7 +975,10 @@ p {
   .social-networks {
     text-align: center; }
     .social-networks [class^='flaticon-']::before {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+
+  footer {
+    font-size: 0.75rem; } }
 @media (min-width: 992px) {
   h1 {
     font-size: 4rem; }
@@ -1048,7 +1063,10 @@ p {
   .social-networks {
     text-align: left; }
     .social-networks [class^='flaticon-']::before {
-      font-size: 3rem; } }
+      font-size: 3rem; }
+
+  footer {
+    font-size: inherit; } }
 @media (min-width: 1200px) {
   .about-me {
     height: 100%; }
