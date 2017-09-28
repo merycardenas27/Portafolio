@@ -102,6 +102,15 @@ p {
   font-size: 6rem;
   margin-left: 0;
 }
+.flaticon-facebook-logo-button {
+  color: #3b5998;
+}
+.flaticon-linkedin-button {
+  color: #0077b5;
+}
+.flaticon-github-logo{
+  color: #000000;
+}
 /*BLOQUES*/
 .navbar {
   @extend .theme-navbar;
@@ -515,10 +524,35 @@ p {
 .card {
   @extend .theme-important-section;
   box-shadow: 1px 1px 9px rgba(0,0,0,0.1);
-  height: 300px;
-  padding: 1rem;
 }
-
+.direct-contact {
+  p {
+    margin-bottom: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+  .btn {
+    width: 175px;
+    padding: 1.5rem 0;
+  }
+}
+.template-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.social-networks {
+  [class^='flaticon-']:hover {
+    color: $accent-color;
+  }
+  a {
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+}
 @media (min-width: 0) {
   [class^='flaticon-']::before {
     font-size: 5rem;
@@ -572,7 +606,8 @@ p {
       bottom: 0.25rem;
       width: calc(100% - 2rem);
       .btn {
-        width: 75px;
+        padding: 1rem 0;
+        width: 100px;
       }
     }
   }
@@ -580,6 +615,32 @@ p {
     padding: 0;
     h4, ul {
       display: none;
+    }
+  }
+  .card {
+    height: auto;
+    padding: 1rem;
+  }
+  .direct-contact {
+    margin-bottom: 1rem;
+  }
+  .personal-information {
+    font-size: 0.85rem;
+    [class^='flaticon-']::before {
+      font-size: 1.5rem;
+    }
+    .flaticon-smartphone-call {
+      margin-left: -5px;
+      margin-right: 1rem;
+    }
+    .flaticon-mail-black-envelope-symbol {
+      margin-right: 0.5rem;
+    }
+  }
+  .social-networks {
+    text-align: center;
+    [class^='flaticon-']::before {
+      font-size: 2rem;
     }
   }
 }
@@ -642,7 +703,8 @@ p {
       bottom: 1rem;
       width: calc(100% - 4rem);
       .btn {
-        width: 100px;
+        padding: 1rem 0;
+        width: 150px;
       }
     }
   }
@@ -660,6 +722,32 @@ p {
         background-color: lightgray;
         padding: 0.5rem;
       }
+    }
+  }
+  .card {
+    height: 250px;
+    padding: 2rem;
+  }
+  .direct-contact {
+    margin-bottom: 0;
+  }
+  .personal-information {
+    font-size: 1rem;
+    [class^='flaticon-']::before {
+      font-size: 3rem;
+    }
+    .flaticon-smartphone-call {
+      margin-left: -10px;
+      margin-right: 2rem;
+    }
+    .flaticon-mail-black-envelope-symbol {
+      margin-right: 1.5rem;
+    }
+  }
+  .social-networks {
+    text-align: left;
+    [class^='flaticon-']::before {
+      font-size: 3rem;
     }
   }
 }

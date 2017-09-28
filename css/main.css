@@ -492,6 +492,15 @@ p {
   font-size: 6rem;
   margin-left: 0; }
 
+.flaticon-facebook-logo-button {
+  color: #3b5998; }
+
+.flaticon-linkedin-button {
+  color: #0077b5; }
+
+.flaticon-github-logo {
+  color: #000000; }
+
 /*BLOQUES*/
 .navbar {
   align-items: center;
@@ -855,9 +864,28 @@ p {
   transform: rotateY(0) rotateX(0); }
 
 .card {
-  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
-  height: 300px;
-  padding: 1rem; }
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1); }
+
+.direct-contact p {
+  margin-bottom: 2rem; }
+  .direct-contact p span {
+    font-weight: bold; }
+.direct-contact .btn {
+  width: 175px;
+  padding: 1.5rem 0; }
+
+.template-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.social-networks [class^='flaticon-']:hover {
+  color: #f9a91a; }
+.social-networks a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none; }
 
 @media (min-width: 0) {
   [class^='flaticon-']::before {
@@ -907,12 +935,35 @@ p {
       bottom: 0.25rem;
       width: calc(100% - 2rem); }
       .project-caption .user-action .btn {
-        width: 75px; }
+        padding: 1rem 0;
+        width: 100px; }
 
   .project-information {
     padding: 0; }
     .project-information h4, .project-information ul {
-      display: none; } }
+      display: none; }
+
+  .card {
+    height: auto;
+    padding: 1rem; }
+
+  .direct-contact {
+    margin-bottom: 1rem; }
+
+  .personal-information {
+    font-size: 0.85rem; }
+    .personal-information [class^='flaticon-']::before {
+      font-size: 1.5rem; }
+    .personal-information .flaticon-smartphone-call {
+      margin-left: -5px;
+      margin-right: 1rem; }
+    .personal-information .flaticon-mail-black-envelope-symbol {
+      margin-right: 0.5rem; }
+
+  .social-networks {
+    text-align: center; }
+    .social-networks [class^='flaticon-']::before {
+      font-size: 2rem; } }
 @media (min-width: 992px) {
   h1 {
     font-size: 4rem; }
@@ -961,7 +1012,8 @@ p {
       bottom: 1rem;
       width: calc(100% - 4rem); }
       .project-caption .user-action .btn {
-        width: 100px; }
+        padding: 1rem 0;
+        width: 150px; }
 
   .project-information {
     padding: 2rem; }
@@ -974,7 +1026,29 @@ p {
       .project-information ul li {
         display: inline-block;
         background-color: lightgray;
-        padding: 0.5rem; } }
+        padding: 0.5rem; }
+
+  .card {
+    height: 250px;
+    padding: 2rem; }
+
+  .direct-contact {
+    margin-bottom: 0; }
+
+  .personal-information {
+    font-size: 1rem; }
+    .personal-information [class^='flaticon-']::before {
+      font-size: 3rem; }
+    .personal-information .flaticon-smartphone-call {
+      margin-left: -10px;
+      margin-right: 2rem; }
+    .personal-information .flaticon-mail-black-envelope-symbol {
+      margin-right: 1.5rem; }
+
+  .social-networks {
+    text-align: left; }
+    .social-networks [class^='flaticon-']::before {
+      font-size: 3rem; } }
 @media (min-width: 1200px) {
   .about-me {
     height: 100%; }
