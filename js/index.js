@@ -8,8 +8,4 @@ $().ready( _=> {
           $("#navbar-main").removeClass("navbar-small")
       }
   });
-  //Cargar estilos y transiciones de la galería
-  $(function() {
-    $('#dg-container').gallery();
-  });
 });
